@@ -29,7 +29,7 @@ def get_data_x_y(train_or_test='train'):
         print('get_data_x_y train_or_test error!!!')
     data_x = data_x.astype('float32') / 255.0   # nomalize
     data_y = to_categorical(data_y, num_class)  # to_categorical
-    print('data_x.shape, data_y.shape, type(data_x):', data_x.shape, data_y.shape, type(data_x))
+    #print('data_x.shape, data_y.shape, type(data_x):', data_x.shape, data_y.shape, type(data_x))
     return data_x, data_y
 
 def create_dnn_model_v1():
